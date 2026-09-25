@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+#content {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}
+
+/* Sidebar */
+
+.sidebar {
+    padding: 25px 15px;
+    background: #ececec;
+    border-right: 1px solid #d8d8d8;
+}
+
+.sidebar h1 {
+    margin: 0 0 25px;
+}
+
+.sidebar h2 {
+    margin: 20px 0 12px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* New project */
+
+.new-project-button {
+    margin-bottom: 20px;
+    background: white !important;
+    border: 1px solid #d5d5d5 !important;
+    font-weight: 600;
+}
+
+/* Project list */
+
+.projects-list {
+    width: 100%;
+}
+
+.project-link {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.project-link > button:first-child {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.project-link > button+ button {
+    flex: 0 0 auto;
+    width: auto;
+    color: #c44;
+}
+
+/* Main */
+
+.main {
+    padding: 40px;
+}
+
+.main h2 {
+    margin-top: 0;
+}
+
+/* Projects */
+
+.project {
+    margin-bottom: 25px;
+    padding: 25px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Todos */
+
+.todo {
+    margin-top: 15px;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+}
+
+.todo h4 {
+    display: inline;
+    margin-left: 8px;
+}
+
+.todo p {
+    margin: 6px 0;
+}
+
+.todo button:last-child {
+    color: #c44;
+}
+
+/* Forms */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 15px 0;
+}
+
+input,
+textarea,
+select,
+button {
+    font: inherit;
+}
+
+input,
+textarea,
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: fit-content;
+    padding: 8px 16px;
+    cursor: pointer;
+}
